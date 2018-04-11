@@ -1,0 +1,220 @@
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid #931420;
+}
+
+html {
+	background-color: #fffded;
+}
+
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: -webkit-linear-gradient (30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li a {
+	width: 160px;
+	text-align: center;
+	padding: 1em;
+	text-decoration:none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+
+
+#nav_menu #current {
+	color: yellow;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+}
+
+main h1 { 
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+main h2 { 
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+main h3 { 
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px #800000;
+	border-bottom: 2px #800000;
+}
+
+
+article img { 
+	float: right;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	border: 1px solid black;
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 103%;
+	padding-bottom: .25em;
+}
+
+section {
+	width: 525px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+section ul {
+	list-style-type: circle;
+}
+
+aside { 
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+/*aside h2 {
+}*/
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img {
+	padding-bottom: 1em;
+}
+
+
+a:hover, a:focus { 
+	font-style: italic;
+}
+
+img {
+	padding-bottom: 1em;
+}
+
+p {
+	padding-bottom: .5em;
+}
+
+blockquote {
+	padding-right: 2em;
+	padding-left: 2em;
+	font-style: italic;
+}
+
+ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+
+li {
+	padding-bottom: .35em;
+}
+
+footer p {
+	text-align: center;
+	background-color: #931420;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	clear: both;
+}
+
+.shadow {
+	text-shadow: -2px -2px 4px #800000;
+}
+
+/* the reset selector */
+* {
+	margin: 0;
+	padding:0;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+}
